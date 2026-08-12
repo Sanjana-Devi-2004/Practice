@@ -23,6 +23,7 @@
                     <h3>Approve Skills</h3>
                     <p>Approve skills</p>
                     <button id="app-skills">Approve skills</button>
+                    <button id="reject-skills">Reject Skills</button>
                 </div>
             </div>
             <div class="action-card">
@@ -53,7 +54,7 @@
             <div class="pipeline-info">
                 <span>Pending <b id="pipeline-pending">116</b></span>
                 <span id="approve-pipeline">Approved <b>234</b></span>
-                <span>Rejected <b>0</b></span>
+                <span>Rejected <b id="rejected-pipeline">0</b></span>
             </div>
         </div>
     </section>
@@ -72,7 +73,7 @@
         </div>
         <div class="stat-card">
             <p>REJECTED</p>
-            <h1>0</h1>
+            <h1 id="rejected">0</h1>
         </div>
     </section>
     <div class="modal skill-modal">
@@ -109,6 +110,10 @@
     </section>
     <section id="approvedskills" class="skills">
         <h2>Approved Skills</h2>
+        <div class="skills-container"></div>
+    </section>
+    <section id="rejectedskills" class="skills">
+        <h2>Rejected Skills</h2>
         <div class="skills-container"></div>
     </section>
     <script src="app.js"></script>
