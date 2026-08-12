@@ -1,4 +1,4 @@
-## This is practice setup
+## This is a practice setup
 ### Javascript
 ### HTML
 ### OOPS
