@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: Red; font-size: 40px; font-style: italic; text-decoration: underline;" >WinCompass Dashboard</h1>
+    <section class="section">
+        <h2>QUICK ACTIONS</h2>
+        <div class="actions">
+            <div class="action-card create-skill">
+                <div>
+                    <h3>Create skill requirements</h3>
+                    <p>Define a new required skill</p>
+                    <button>Add skill</button>
+                </div>
+            </div>
+            <div class="action-card bulk-insert">
+                <div>
+                    <h3>Approve Skills</h3>
+                    <p>Approve skills</p>
+                    <button id="app-skills">Approve skills</button>
+                </div>
+            </div>
+            <div class="action-card">
+                <div>
+                    <h3>Create feedback</h3>
+                    <p>Ask a reviewer for feedback</p>
+                    <button id="feedback-btn">Add Feedback</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <h2>SKILL MATRIX</h2>
+        <div class="pipeline">
+            <div class="pipeline-header">
+                <h3>Skill review bar</h3>
+                <p>
+                    <span class="pipeline-approved">234</span>
+                    of
+                    <span class="pipeline-total">350</span>
+                    approved
+                </p>
+            </div>
+            <div class="progress">
+                <div class="approved"></div>
+                <div class="pending"></div>
+            </div>
+            <div class="pipeline-info">
+                <span>Pending <b id="pipeline-pending">116</b></span>
+                <span id="approve-pipeline">Approved <b>234</b></span>
+                <span>Rejected <b>0</b></span>
+            </div>
+        </div>
+    </section>
+    <section class="stats">
+        <div class="stat-card">
+            <p>TOTAL SKILLS</p>
+            <h1 id="totalSkills">350</h1>
+        </div>
+        <div class="stat-card">
+            <p>APPROVED</p>
+            <h1 id="approved-skills">234</h1>
+        </div>
+        <div class="stat-card" >
+            <p>PENDING</p>
+            <h1 id="pending">116</h1>
+        </div>
+        <div class="stat-card">
+            <p>REJECTED</p>
+            <h1>0</h1>
+        </div>
+    </section>
+    <div class="modal skill-modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <h2>Create Skill Requirement</h2>
+            <p>Add a new skill requirement.</p>
+            <input
+                type="text"
+                class="skill-input"
+                placeholder="Enter skill name"
+            >
+            <button id="add-skill">Add Skill</button>
+        </div>
+    </div>
+
+    <div class="modal feedback-modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <h2>ADD FEEDBACK</h2>
+            <p>Add some feedback.</p>
+            <input
+                type="text"
+                class="feedback-input"
+                placeholder="Enter feedback"
+            >
+            <button id="add-feedback">Add Feedback</button>
+        </div>
+    </div>
+
+    <section id="addedskills" class="skills">
+        <h2>Added Skills</h2>
+        <div class="skills-container"></div>
+    </section>
+    <section id="approvedskills" class="skills">
+        <h2>Approved Skills</h2>
+        <div class="skills-container"></div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

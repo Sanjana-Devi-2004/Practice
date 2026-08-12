@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+.action-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.action-card:hover {
+    background: #eef2f7;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: #e8eef8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.action-card h3 {
+    margin: 0;
+}
+
+.action-card p {
+    margin: 5px 0;
+    color: gray;
+}
+
+.pipeline {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pipeline-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress {
+    height: 15px;
+    display: flex;
+    margin: 15px 0;
+}
+
+.approved {
+    background: green;
+    width: 67%;
+}
+
+.pending {
+    background: orange;
+    width: 33%;
+}
+
+.pipeline-info {
+    display: flex;
+    gap: 25px;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.stat-card h1 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.stat-card p {
+    color: gray;
+}
+
+.stat-card span {
+    color: gray;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modal input,
+.modal textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+}
+
+.modal textarea {
+    height: 100px;
+}
+
+.modal button {
+    width: 100%;
+    padding: 10px;
+    background: #172f55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.skills {
+    background: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.skill-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.approve-button {
+    padding: 5px 10px;
+    background: #e3f3eb;
+    color: green;
+    border: none;
+    cursor: pointer;
+}
+
+.approved-label {
+    color: green;
+}
